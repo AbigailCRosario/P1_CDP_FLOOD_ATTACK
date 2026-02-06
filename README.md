@@ -48,7 +48,7 @@ La red LAN opera bajo el segmento de red `20.24.11.0/24`. A continuación, se de
 
 A continuación, se detalla el procedimiento para replicar el ataque de inundación CDP utilizando las herramientas desarrolladas.
 
-### Paso 1: Verificación del Entorno (Topología)
+### Paso 1: Verificación de la Topología
 Antes de iniciar, confirmamos que la topología en GNS3 esté activa y conectada. El atacante (Kali) debe estar en el mismo segmento de red que el Switch objetivo.
 
 ### Paso 2: Ejecución de la Herramienta
@@ -65,7 +65,8 @@ Análisis de Tráfico (Wireshark) Para confirmar que los paquetes están saliend
 ## Paso 4: 
 Verificación de Impacto (En el Switch) Finalmente, accedemos a la consola del Switch Cisco para verificar el éxito del ataque. Al consultar la tabla de vecinos, observamos que esta se ha saturado con cientos de dispositivos inexistentes, lo que demuestra la vulnerabilidad del equipo al procesar toda esta información basura.
 
-**Comando en el Switch:** ```bash SW1-Access# show cdp neighbors
+**Comando en el Switch:** 
+```bash: SW1-Access# show cdp neighbors```
 
 ## 🛡️ Medidas de Mitigación
 
